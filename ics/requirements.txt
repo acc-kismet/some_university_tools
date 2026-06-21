@@ -1,0 +1,8 @@
+beautifulsoup4>=4.13.0
+ics>=0.7.2
+pytz>=2022.1
+requests>=2.32.0
+pycryptodome>=3.19.0
+
+# 可选：浏览器滑块验证
+# playwright>=1.40.0

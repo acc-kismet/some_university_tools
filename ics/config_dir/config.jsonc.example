@@ -1,0 +1,34 @@
+{
+    // 学号；留空或使用占位符「你的学号」时，运行时在终端交互输入
+    "username": "你的学号",
+
+    // 统一认证密码；留空或使用占位符「你的密码」时，运行时在终端 getpass 输入
+    "password": "你的密码",
+
+    // 二次验证方式：sms（短信）/ app（Authenticator）/ email / otp
+    "mfaMethod": "sms",
+
+    // MFA 页面是否勾选「信任此设备」，减少后续登录验证
+    "trustDevice": true,
+
+    // 是否读取 config_dir/cache/session.json，命中则跳过重复登录
+    "useSessionCache": true,
+
+    // 登录成功后是否写入 config_dir/cache/session.json 供下次复用
+    "saveSession": true,
+
+    // 生成 ICS 后是否发邮件：prompt（终端询问）/ true / false
+    "sendMail": "prompt",
+
+    // 日志级别：DEBUG / INFO / WARNING / ERROR
+    "logLevel": "INFO",
+
+    // 可选；日志文件路径，留空则仅输出到控制台
+    "logFile": "",
+
+    // 拉取课表起始日期 YYYY-MM-DD；留空则使用 config.py 的 START_DATE
+    "startDate": "2025-06-22",
+
+    // 拉取课表结束日期 YYYY-MM-DD；留空则使用 config.py 的 END_DATE
+    "endDate": "2026-02-01"
+}

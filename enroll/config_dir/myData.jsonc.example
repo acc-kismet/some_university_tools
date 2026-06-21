@@ -1,0 +1,37 @@
+{
+    // 学号；与 password 一起用于 IDS 登录（使用 cookies 时可留占位符）
+    "username": "你的学号",
+
+    // 统一认证密码
+    "password": "你的密码",
+
+    // 选课类型中文名，如「跨专业课程体系」；抢课模式 export 时可留空
+    "courseType": "跨专业课程体系",
+
+    // 运行模式：auto（有课程 ID 则抢课，否则导出列表）/ enroll / export
+    "runMode": "auto",
+
+    // 要抢的课程任务 ID 列表；来自 keyCourseInfo.json 或 allCourseInfo.json 的 id 字段
+    "selectedCourseIds": ["需要抢的课程id"],
+
+    // 二次验证方式：sms / app / email / otp
+    "mfaMethod": "sms",
+
+    // MFA 是否勾选「信任此设备」
+    "trustDevice": true,
+
+    // 是否读取 config_dir/cache/session.json 跳过重复登录
+    "useSessionCache": true,
+
+    // 登录成功后是否写入 config_dir/cache/session.json
+    "saveSession": true,
+
+    // 日志级别：DEBUG / INFO / WARNING / ERROR
+    "logLevel": "INFO",
+
+    // 可选；日志文件路径，留空则仅输出到控制台
+    "logFile": "",
+
+    // 非空时跳过 IDS 登录，直接使用浏览器 Cookie 访问教务（键值对同 DevTools Cookie）
+    "cookies": {}
+}

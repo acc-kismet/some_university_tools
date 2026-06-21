@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.Python
+*.egg-info/
+.venv/
+venv/
+.env
+.env.*
+
+# 个人配置与运行产物（只提交 config_dir/*.example 模板）
+**/config_dir/**
+!**/config_dir/*.example
+
+# 兼容旧路径（迁移前遗留）
+**/.session.json
+**/.browser_fingerprint
+**/myData.json
+**/myData.jsonc
+**/config.json
+**/config.jsonc
+!**/myData.jsonc.example
+!**/config.jsonc.example
+!**/myData.json.example
+!**/config.json.example
+
+# 验证码临时文件
+**/captcha.png
+
+# 运行日志
+*.log
+**/logs/
+
+# IDE / 编辑器
+.idea/
+.vscode/
+*.swp
+*~
